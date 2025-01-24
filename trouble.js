@@ -3,11 +3,11 @@ let v2 = 4
 //alert("3 times 4" + equals + v1 * v2);
 
  // This sets the general styling for the divs within the section tag using .style
-            let section = document.getElementsById("s1")
+            let section = document.getElementById("s1") // .getElementsById wrong, no s in Element
             section.style.width = "50%"
             section.style.textAlign = "center"
             section.style.fontFamily = "arial, serif"
-            section.stlye.fontWeight = "bold"
+            section.style.fontWeight = "bold" // stlye spelled wrong, style
             section.style.fontStyle = "italic"
             section.style.fontSize = "20px"
 
@@ -16,14 +16,14 @@ let v2 = 4
 			//.style.backgroundColor is used to assign a different background color to each div
 			
             // RED
-            const red = document.getelementById("red")
+            const red = document.getElementById("red") // case-sensitive, Element must be capitalized
             red.innerHTML = "RED"
             red.style.backgroundColor = "red"
 
             // ORANGE
             const orange = document.getElementById("orange")
-            orange.innerhtml = "ORANGE"
-            orange.style.backgroundColor = "orange"
+            orange.innerHTML = "ORANGE" // html not caps, should be HTML
+            orange.style.backgroundColor = "OrangeRed"
 
             // YELLOW
             const yellow = document.getElementById("yellow")
@@ -31,7 +31,7 @@ let v2 = 4
             yellow.style.backgroundColor = "yellow"
 
             // GREEN
-            const purple = document.getElementById("green")
+            const green = document.getElementById("green") // const should be green, not purple
             green.innerHTML = "GREEN"
             green.style.backgroundColor = "green"
 
